@@ -1,0 +1,76 @@
+body {
+	height: 100%;
+	max-width: 100%;
+	font: 16px Arial, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center; 
+}
+
+td{
+    text-align: center;
+    width 30px;
+    height: 30px;
+}
+
+.holiday_td{
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+    border-radius: 50%;
+    background-color:antiquewhite;
+    position: relative;
+}
+
+.holiday_td:before {
+    display:block;
+    position: absolute;
+    text-align: center;
+    bottom:30px;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    background-color: grey;
+    color: white;
+    border-radius: 7px;
+    content: attr(data-title);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.holiday_td:hover:before{
+    opacity: 1;
+    visibility: visible;
+}
+
+div{
+    font-style: italic;
+    font-size: 20;
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    text-align: center;
+}
+
+tr{padding: 10px;}
+
+table{
+    width: 80%;
+    cursor: pointer;
+}
+
+.month_name{
+    width: 100%;
+}
+
+.flex-box{
+    position: relative;
+    margin: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
